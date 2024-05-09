@@ -14,6 +14,8 @@ public class Smita_Programs {
 				System.out.println("Hi");
 			} else if (a % 3 == 0 && a % 5 == 0) {
 				System.out.println("Haha!!");
+			}else {
+				System.out.println("Invalid output");
 			}
 		}
 
