@@ -2,6 +2,9 @@ package Base;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.Assert;
+
+
 
 public class TestBase {
 
@@ -10,6 +13,9 @@ public class TestBase {
 		driver.get("https://www.amazon.in/");
 		String title= driver.getTitle();
 		System.out.println(title);
+		Assert.assertTrue(title.contains("Online"));
+		driver.close();
+		
 	}
 
 }
