@@ -46,19 +46,19 @@ public class Carwale {
 		}
 		String parentWindow = driver.getWindowHandle();
 		Set<String> allWindow = driver.getWindowHandles();
-//		for (String string : allWindow) {
-//			if (allWindow.contains(parentWindow)) {
-//
-//			} else {
-//
-//				driver.switchTo().window(string);
-//				String title = driver.getTitle();
-//				System.out.println(title);
-//
-//			}
-			 allWindow.remove(parentWindow);
-			 for (String string : allWindow) {
+		for (String string : allWindow) {
+			if (allWindow.contains(parentWindow)) {
+
+			} else {
+
 				driver.switchTo().window(string);
+				String title = driver.getTitle();
+				System.out.println(title);
+
+			}
+//			 allWindow.remove(parentWindow);
+//			 for (String string : allWindow) {
+//				driver.switchTo().window(string);
 				
 			}
 
